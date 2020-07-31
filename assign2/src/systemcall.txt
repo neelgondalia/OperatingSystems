@@ -1,0 +1,16 @@
+Model: Surface Laptop
+CPU: Intel Core i5-7200U 
+RAM: 8 GB
+Hard Drive: 256 GB KBG30ZPZ256G TOSHIBA SSD
+Operating System: Windows 10 Pro
+Virtual Box: 5.2.22
+
+The file used for testing, filename, was 1 MB in size. When reading
+in the file 1 byte per read, it was noted that system calls (read)
+took way longer than C function calls (fgetc). This trend continued
+until 2048 bytes per read was tested. After this point, unix system
+calls were faster than the c function calls. In conclusion, it was 
+noted that unix system calls are faster for reading when more bytes
+per read is required, otherwise C function calls are faster. It was
+also noted that the time to read a file decreased as more bytes were
+read per read.

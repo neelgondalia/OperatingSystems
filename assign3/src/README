@@ -1,0 +1,21 @@
+*******************************
+Neel Gondalia
+0940429
+CIS*3110
+Assignment 3
+*******************************
+
+*******************************
+	Compile and Run
+*******************************
+1) run 'make' in the working directory assign3/
+2) run './idispatcher<test_inputs/test0.in' in the working directory assign3/ to run test0.in file from the test_inputs directory.
+   Replace the test_inputs/test0.in with whereever the file you wish to test is
+3) run 'make clean' to remove the executable
+
+******************************
+	Assumptions
+******************************
+1) The input files will be in valid format -> 'time' 'event' 'process/resource number' 'process/resource number'
+2) The output of the times will be printed in the terminal in the format -> 'process id:' 'time running' 'time ready' 'time blocked' 
+3) The order of output being printed will be the order in which the process exited in the input file

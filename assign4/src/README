@@ -1,0 +1,21 @@
+****************************************
+Neel Gondalia 0940429
+ngondali@uoguelph.ca
+CIS*3110 - A4
+****************************************
+
+****************************************
+                NOTES
+****************************************
+1) for question 1, part 1 in a4_soln.pdf and part 2 is shown in a4_badoutput.txt
+2) for question 2, follow compiling and execution section
+3) for question 3, detailed answer in a4_soln.pdf
+
+****************************************
+        Compiling/Execution
+****************************************
+1) type 'make goodcnt' to compile question 2 answer/modified program igoodcnt.c
+2) type 'make badcnt' to compile question 1 given file ibadcnt.c
+3) type './igoodcnt 2000' to execute question 2 executible with NITER of 2000
+    - error checking includes number of arguments, valid integer for NITER
+4) type './ibadcnt' to execute question 1 program

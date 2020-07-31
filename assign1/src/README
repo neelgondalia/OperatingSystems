@@ -1,0 +1,46 @@
+##############################################
+## 	Name: Neel Gondalia
+## 	Student ID: 0940429
+##  Email: ngondali@uoguelph.ca
+##############################################
+
+************************************
+		SOLUTION STRATEGY
+************************************
+Bison is used to generate a parser and flex is used to generate a scanner that obtains the 
+command and its arguments from the command line using lexical patterns. The command is then
+checked if its a custom command, cd or any other command. The custom command is passed to
+customcommand function for execution. cd is operated during command comparision. 
+All the other commands are sent to processln function. A child process is forked, and in that
+child process the command is executed. When in the parent process, it is assumed that every 
+command is to be ran in the background unless it is found to be not ran in the background.
+In which case, the process waits for the command to be executed before returing.
+
+
+************************************
+		    ASSUMPTIONS
+************************************
+1) first argument is always the command
+2) & is always the last argument if the command is to be ran in the background
+3) Case sensitive commands
+4) No tab completions
+5) No stored history of commands
+6) Only abnormal status of commands/forking/processes are reported
+7) All child processes are killed at exit
+
+
+************************************
+		HOW TO RUN THE SHELL
+************************************
+1) In the working directory of the assignment, assign1/, in the terminal, type:
+    'make' or 'make all' or 'make ish' to compile the custom C shell
+
+2) In the same directory, type:
+    './ish' to run the shell executable
+
+
+************************************
+        OTHER MAKEFILE TARGETS
+************************************
+- 'make clean' cleans all the objects and executable
+- 'make lex.yy.c' makes the input scanner

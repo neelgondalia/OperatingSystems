@@ -1,0 +1,16 @@
+*****************************************
+Name: Neel Gondalia
+Student ID: 0940429
+Date: February 17, 2019
+CIS*3110 Assignment 2
+*****************************************
+
+**********************************************
+    Compiling and running the program
+**********************************************
+1) In the current working directory, type 'make' compile the program.
+2) To run the program one call at a time, type './unixio filename numbytesperread typeofcall'
+3) To run the provided script, make sure the script is in the current working directory and
+   then type './t.sh'
+4) To run the provided script and put the output in the file a2output.txt,
+   type './t.sh>a2output.txt
